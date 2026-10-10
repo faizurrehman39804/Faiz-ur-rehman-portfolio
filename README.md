@@ -1,76 +1,36 @@
-# Faiz Ur Rehman — Personal Portfolio
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## 1. Project Overview
-A production-quality personal portfolio showcasing full-stack development experience, technical skills, and engineering philosophy. Built with React and Vite.
+## Getting Started
 
-## 2. Purpose
-To serve as a professional identity, demonstrating not just what I have built, but how I build it—emphasizing scalable architecture, clean code, accessibility, and performance.
+First, run the development server:
 
-## 3. Owner
-Faiz Ur Rehman - Full-Stack Developer
-
-## 4. Tech Stack
-- **Frontend:** React 19, Vite, Vanilla CSS
-- **Code Quality:** Oxlint
-- **Deployment:** [TBD]
-
-## 5. Features
-- Modern, minimal, engineering-focused design
-- Responsive, mobile-first layout
-- Project showcase with detailed technical breakdowns
-- Modular architecture with clean separation of data and UI
-- Accessible and performant
-
-## 6. Project Structure
-```
-/
-├── docs/               # Comprehensive project documentation
-├── public/             # Static assets
-└── src/
-    ├── assets/         # Images, icons
-    ├── components/     # Reusable UI components
-    ├── data/           # Structured portfolio content (JSON/JS)
-    ├── sections/       # Major layout sections (Hero, About, etc.)
-    └── styles/         # Global styles and design system variables
-```
-
-## 7. Installation
 ```bash
-npm install
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## 8. Environment Variables
-No environment variables required for local development currently.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 9. Development Commands
-```bash
-npm run dev     # Start development server
-npm run lint    # Run linter
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## 10. Build Command
-```bash
-npm run build   # Build for production
-```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## 11. Deployment
-Configuration for deployment (e.g., Vercel) will be established in subsequent modules.
+## Learn More
 
-## 12. Documentation Links
-- [Project Overview](./docs/PROJECT_OVERVIEW.md)
-- [Architecture](./docs/ARCHITECTURE.md)
-- [Design System](./docs/DESIGN_SYSTEM.md)
-- [Component Guide](./docs/COMPONENT_GUIDE.md)
-- [Development Workflow](./docs/DEVELOPMENT_WORKFLOW.md)
-- [Changelog](./docs/CHANGELOG.md)
+To learn more about Next.js, take a look at the following resources:
 
-## 13. Known Limitations
-- Initial setup phase; UI components and content are pending.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## 14. Future Improvements
-- Implement dynamic routing or smooth scrolling.
-- Integrate project and skills data.
-- Add SEO metadata.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## 15. Author
-Faiz Ur Rehman
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
