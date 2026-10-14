@@ -24,6 +24,7 @@ const Navbar = () => {
           <a href="#experience" className="text-sm font-medium text-muted hover:text-primary transition-colors uppercase tracking-widest">EXPERIENCE</a>
           <a href="#projects" className="text-sm font-medium text-muted hover:text-primary transition-colors uppercase tracking-widest">PROJECTS</a>
           <a href="#blog" className="text-sm font-medium text-muted hover:text-primary transition-colors uppercase tracking-widest">BLOG</a>
+          <a href="#connect" className="text-sm font-medium text-primary hover:text-white transition-colors uppercase tracking-widest">CONNECT</a>
         </nav>
 
         {/* Social Links */}
@@ -57,6 +58,7 @@ const Navbar = () => {
           <a href="#experience" onClick={() => setIsOpen(false)} className="block text-sm text-muted hover:text-primary transition-colors uppercase tracking-widest">Experience</a>
           <a href="#projects" onClick={() => setIsOpen(false)} className="block text-sm text-muted hover:text-primary transition-colors uppercase tracking-widest">Projects</a>
           <a href="#blog" onClick={() => setIsOpen(false)} className="block text-sm text-muted hover:text-primary transition-colors uppercase tracking-widest">Blog</a>
+          <a href="#connect" onClick={() => setIsOpen(false)} className="block text-sm text-primary hover:text-white transition-colors uppercase tracking-widest">Connect</a>
         </div>
       )}
     </header>

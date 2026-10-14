@@ -3,10 +3,13 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Blog from "@/components/Blog";
+import CodeConnect from "@/components/CodeConnect";
+import StarBackground from "@/components/StarBackground";
 
 export default function App() {
   return (
-    <div className="text-foreground selection:bg-primary/30">
+    <div className="text-foreground selection:bg-primary/30 relative min-h-screen bg-[#111216]">
+      <StarBackground />
       <Navbar />
       <main className="pt-24 md:pt-32 pb-20">
         <section id="home" className="min-h-screen flex items-center relative overflow-hidden">
@@ -120,6 +123,7 @@ export default function App() {
           <Experience />
           <Projects />
           <Blog />
+          <CodeConnect />
         </div>
       </main>
     </div>
