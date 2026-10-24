@@ -17,10 +17,11 @@ const Navbar = () => {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-5 lg:gap-8">
           <a href="#home" className="text-sm font-medium text-muted hover:text-primary transition-colors uppercase tracking-widest">HOME</a>
           <a href="#about" className="text-sm font-medium text-muted hover:text-primary transition-colors uppercase tracking-widest">ABOUT ME</a>
           <a href="#skills" className="text-sm font-medium text-muted hover:text-primary transition-colors uppercase tracking-widest">STACK</a>
+          <a href="#business-dev" className="text-sm font-medium text-muted hover:text-primary transition-colors uppercase tracking-widest">CLIENT DEV</a>
           <a href="#experience" className="text-sm font-medium text-muted hover:text-primary transition-colors uppercase tracking-widest">EXPERIENCE</a>
           <a href="#projects" className="text-sm font-medium text-muted hover:text-primary transition-colors uppercase tracking-widest">PROJECTS</a>
           <a href="#blog" className="text-sm font-medium text-muted hover:text-primary transition-colors uppercase tracking-widest">BLOG</a>
@@ -55,6 +56,7 @@ const Navbar = () => {
           <a href="#home" onClick={() => setIsOpen(false)} className="block text-sm text-muted hover:text-primary transition-colors uppercase tracking-widest">Home</a>
           <a href="#about" onClick={() => setIsOpen(false)} className="block text-sm text-muted hover:text-primary transition-colors uppercase tracking-widest">About Me</a>
           <a href="#skills" onClick={() => setIsOpen(false)} className="block text-sm text-muted hover:text-primary transition-colors uppercase tracking-widest">Stack</a>
+          <a href="#business-dev" onClick={() => setIsOpen(false)} className="block text-sm text-muted hover:text-primary transition-colors uppercase tracking-widest">Client Dev</a>
           <a href="#experience" onClick={() => setIsOpen(false)} className="block text-sm text-muted hover:text-primary transition-colors uppercase tracking-widest">Experience</a>
           <a href="#projects" onClick={() => setIsOpen(false)} className="block text-sm text-muted hover:text-primary transition-colors uppercase tracking-widest">Projects</a>
           <a href="#blog" onClick={() => setIsOpen(false)} className="block text-sm text-muted hover:text-primary transition-colors uppercase tracking-widest">Blog</a>

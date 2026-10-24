@@ -1,5 +1,7 @@
+import { motion } from 'framer-motion';
 import Navbar from "@/components/Navbar";
 import Skills from "@/components/Skills";
+import BusinessDev from "@/components/BusinessDev";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Blog from "@/components/Blog";
@@ -16,7 +18,7 @@ export default function App() {
           <div className="w-full max-w-6xl mx-auto px-4 md:px-8">
             <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
               <div className="flex-1 relative">
-                
+
                 {/* Massive Heading */}
                 <div className="leading-[0.9] tracking-wide heading-font" style={{ fontSize: 'clamp(3rem, 18vw, 12rem)' }}>
                   <div className="overflow-hidden">
@@ -51,7 +53,7 @@ export default function App() {
                   <p className="text-muted text-base md:text-lg leading-relaxed mb-8">
                     Hi! I'm <span className="text-foreground font-medium">Faiz Ur Rehman</span>. I'm a software developer with about a year of experience shipping MERN and Next.js products, and AI-powered development features end to end.
                   </p>
-                  
+
                   <div className="flex flex-wrap items-center gap-4">
                     <a href="mailto:faiz@example.com" className="inline-flex items-center gap-2 bg-[#00f541] text-[#000000] px-6 py-3 rounded-md font-semibold text-sm tracking-widest uppercase hover:opacity-90 transition-opacity">
                       LET'S TALK
@@ -90,36 +92,54 @@ export default function App() {
 
         <section id="about" className="py-20 scroll-mt-20">
           <div className="max-w-6xl mx-auto px-4 md:px-8">
-            <div className="mb-20 max-w-[800px]">
+            <motion.div 
+              className="mb-20 max-w-[800px]"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6 }}
+            >
               <h2 className="heading-font text-2xl md:text-4xl lg:text-5xl text-foreground leading-snug">
                 I build reliable full-stack software with a focus on clear UX, solid architecture, and shipping features that actually get used.
               </h2>
-            </div>
+            </motion.div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-              <div>
+              <motion.div
+                initial={{ opacity: 0, x: -24 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+              >
                 <p className="text-primary text-sm font-medium uppercase tracking-widest mb-3">This is me.</p>
                 <h3 className="heading-font text-3xl md:text-5xl text-foreground mb-6">Hi, I'm Faiz Ur Rehman.</h3>
                 <div className="space-y-5 text-muted leading-relaxed">
                   <p>I'm based in Pakistan and currently in my 2nd Year of education. I work as a junior full-stack developer and care about end-to-end delivery: APIs, databases, frontend polish, and modern architecture.</p>
                   <p>Day to day I use Next.js, React, Node.js, Express, MongoDB, and Tailwind CSS to build web experiences, along with AI-assisted tools like Claude AI and Antigravity to accelerate workflows across the stack.</p>
                 </div>
-              </div>
-              <div className="relative w-full aspect-[3/4] min-h-[280px] overflow-hidden rounded-2xl border border-border bg-[#1a1a1a]">
+              </motion.div>
+              <motion.div 
+                className="relative w-full aspect-[3/4] min-h-[280px] overflow-hidden rounded-2xl border border-border bg-[#1a1a1a]"
+                initial={{ opacity: 0, scale: 0.96 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
                 {/* Fallback pattern since we don't have an exact portrait image yet */}
                 <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10"></div>
                 <div className="pointer-events-none absolute inset-0 z-10 opacity-[0.04]">
                   <div className="h-full w-full grid-overlay"></div>
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="heading-font text-6xl text-muted/20">FAIZ</span>
+                  <img src="../faaa.png" alt="" className="w-full h-full object-cover" />
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </section>
-        
+
         <div className="max-w-6xl mx-auto px-4 md:px-8 mt-20 space-y-32">
           <Skills />
+          <BusinessDev />
           <Experience />
           <Projects />
           <Blog />
