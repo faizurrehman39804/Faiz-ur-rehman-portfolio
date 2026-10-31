@@ -9,9 +9,9 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/70 backdrop-blur-md border-b border-border transition-transform duration-300">
       <div className="max-w-6xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
-        
+
         {/* Logo / Name */}
-        <a href="/" className="relative block h-10 w-[min(100%,13rem)] shrink-0 md:h-11 md:w-[min(100%,15.5rem)] hover:opacity-90 transition-opacity flex items-center heading-font text-2xl lg:text-3xl tracking-widest italic lowercase">
+        <a href="#home" className="relative block h-10 w-[min(100%,13rem)] shrink-0 md:h-11 md:w-[min(100%,15.5rem)] hover:opacity-90 transition-opacity flex items-center heading-font text-2xl lg:text-3xl tracking-widest italic lowercase">
           <span className="text-primary">faiz</span>
           <span className="text-foreground">urrehman</span>
         </a>
@@ -30,19 +30,19 @@ const Navbar = () => {
 
         {/* Social Links */}
         <div className="hidden md:flex items-center gap-4">
-          <a href="https://github.com/Faiz0072" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-primary transition-colors">
+          <a href="https://github.com/faizurrehman39804" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-primary transition-colors">
             <Github size={20} />
           </a>
-          <a href="https://www.linkedin.com/in/faizurrehman" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-primary transition-colors">
+          <a href="https://www.linkedin.com/in/faiz-ur-r-2127193a2" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-primary transition-colors">
             <Linkedin size={20} />
           </a>
-          <a href="mailto:faiz@example.com" className="ml-2 text-muted hover:text-primary transition-colors">
+          <a href="mailto:faizurrehman39804@gmail.com" className="ml-2 text-muted hover:text-primary transition-colors">
             <Mail size={20} />
           </a>
         </div>
 
         {/* Mobile Menu Toggle */}
-        <button 
+        <button
           className="md:hidden text-foreground hover:text-primary transition-colors p-1"
           onClick={() => setIsOpen(!isOpen)}
         >

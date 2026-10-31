@@ -55,7 +55,7 @@ export default function App() {
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4">
-                    <a href="mailto:faiz@example.com" className="inline-flex items-center gap-2 bg-[#00f541] text-[#000000] px-6 py-3 rounded-md font-semibold text-sm tracking-widest uppercase hover:opacity-90 transition-opacity">
+                    <a href="#connect" className="inline-flex items-center gap-2 bg-[#00f541] text-[#000000] px-6 py-3 rounded-md font-semibold text-sm tracking-widest uppercase hover:opacity-90 transition-opacity">
                       LET'S TALK
                       <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
                     </a>
@@ -77,11 +77,11 @@ export default function App() {
                   <p className="text-sm text-muted mt-2">Years of Experience</p>
                 </div>
                 <div className="text-left lg:text-right">
-                  <h5 className="heading-font text-3xl md:text-4xl text-primary leading-none">13+</h5>
+                  <h5 className="heading-font text-3xl md:text-4xl text-primary leading-none">10+</h5>
                   <p className="text-sm text-muted mt-2">GitHub Projects</p>
                 </div>
                 <div className="text-left lg:text-right">
-                  <h5 className="heading-font text-3xl md:text-4xl text-primary leading-none">22</h5>
+                  <h5 className="heading-font text-3xl md:text-4xl text-primary leading-none">17</h5>
                   <p className="text-sm text-muted mt-2">Years Old</p>
                 </div>
               </div>
@@ -92,7 +92,7 @@ export default function App() {
 
         <section id="about" className="py-20 scroll-mt-20">
           <div className="max-w-6xl mx-auto px-4 md:px-8">
-            <motion.div 
+            <motion.div
               className="mb-20 max-w-[800px]"
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -117,7 +117,7 @@ export default function App() {
                   <p>Day to day I use Next.js, React, Node.js, Express, MongoDB, and Tailwind CSS to build web experiences, along with AI-assisted tools like Claude AI and Antigravity to accelerate workflows across the stack.</p>
                 </div>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="relative w-full aspect-[3/4] min-h-[280px] overflow-hidden rounded-2xl border border-border bg-[#1a1a1a]"
                 initial={{ opacity: 0, scale: 0.96 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -130,7 +130,7 @@ export default function App() {
                   <div className="h-full w-full grid-overlay"></div>
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <img src="../faaa.png" alt="" className="w-full h-full object-cover" />
+                  <img src="/faaa.png" alt="Faiz Ur Rehman" className="w-full h-full object-cover" />
                 </div>
               </motion.div>
             </div>

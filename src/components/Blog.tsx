@@ -59,7 +59,7 @@ const Blog = () => {
           <h2 className="heading-font text-5xl md:text-7xl text-foreground mb-4 -skew-x-6">LATEST WRITING</h2>
           <p className="text-primary font-medium tracking-widest uppercase">My Blog</p>
         </div>
-        <a href="#" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-foreground transition-colors uppercase tracking-widest">
+        <a href="https://github.com/faizurrehman39804?tab=repositories" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:text-foreground transition-colors uppercase tracking-widest">
           View All Posts <ExternalLink size={16} />
         </a>
       </motion.div>

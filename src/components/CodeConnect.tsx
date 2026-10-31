@@ -8,10 +8,14 @@ interface CodeConnectProps {
 }
 
 export default function CodeConnect({
-  linkedInUrl = "https://www.linkedin.com/in/faizurrehman",
-  githubUrl = "https://github.com/Faiz0072",
-  email = "rs3274357@gmail.com",
+  linkedInUrl = "https://www.linkedin.com/in/faiz-ur-r-2127193a2",
+  githubUrl = "https://github.com/faizurrehman39804",
+  email = "faizurrehman39804@gmail.com",
 }: CodeConnectProps) {
+  const cleanLinkedInUrl = linkedInUrl.startsWith("http") ? linkedInUrl : `https://${linkedInUrl}`;
+  const cleanGithubUrl = githubUrl.startsWith("http") ? githubUrl : `https://${githubUrl}`;
+  const cleanEmail = email.replace(/[[\]]/g, "").trim();
+
   const [activeTab, setActiveTab] = useState<"code" | "terminal" | "output">("code");
   const [isRunning, setIsRunning] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -27,7 +31,7 @@ export default function CodeConnect({
 
   const profileData = {
     name: "Faiz Ur Rehman",
-    age: "22",
+    age: "17",
     location: "Pakistan",
     role: "Software Developer",
     stack: ["MERN", "TypeScript", "React", "Node.js"],
@@ -124,13 +128,13 @@ export default function CodeConnect({
 
       <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-stretch">
-          
+
           {/* LEFT: Interactive Code & Terminal Window */}
           <div className="rounded-2xl md:rounded-3xl bg-[#0f1118]/95 border border-[#232738] shadow-[0_12px_45px_rgba(0,0,0,0.7)] flex flex-col overflow-hidden backdrop-blur-xl">
-            
+
             {/* Titlebar */}
             <div className="flex items-center justify-between px-4 py-3 bg-[#131620] border-b border-[#232738]/80 select-none">
-              
+
               {/* Left dots and tabs */}
               <div className="flex items-center gap-4">
                 {/* 3 Mac Buttons */}
@@ -144,31 +148,28 @@ export default function CodeConnect({
                 <div className="flex items-center gap-1.5 ml-1">
                   <button
                     onClick={() => setActiveTab("code")}
-                    className={`px-3 py-1 text-xs font-mono rounded-md transition-all cursor-pointer ${
-                      activeTab === "code"
-                        ? "bg-[#23283b] text-white font-medium border border-white/10 shadow-sm"
-                        : "text-[#8890a6] hover:text-white hover:bg-white/5"
-                    }`}
+                    className={`px-3 py-1 text-xs font-mono rounded-md transition-all cursor-pointer ${activeTab === "code"
+                      ? "bg-[#23283b] text-white font-medium border border-white/10 shadow-sm"
+                      : "text-[#8890a6] hover:text-white hover:bg-white/5"
+                      }`}
                   >
                     Code
                   </button>
                   <button
                     onClick={() => setActiveTab("terminal")}
-                    className={`px-3 py-1 text-xs font-mono rounded-md transition-all cursor-pointer ${
-                      activeTab === "terminal"
-                        ? "bg-[#23283b] text-white font-medium border border-white/10 shadow-sm"
-                        : "text-[#8890a6] hover:text-white hover:bg-white/5"
-                    }`}
+                    className={`px-3 py-1 text-xs font-mono rounded-md transition-all cursor-pointer ${activeTab === "terminal"
+                      ? "bg-[#23283b] text-white font-medium border border-white/10 shadow-sm"
+                      : "text-[#8890a6] hover:text-white hover:bg-white/5"
+                      }`}
                   >
                     Terminal
                   </button>
                   <button
                     onClick={() => setActiveTab("output")}
-                    className={`px-3 py-1 text-xs font-mono rounded-md transition-all cursor-pointer ${
-                      activeTab === "output"
-                        ? "bg-[#23283b] text-white font-medium border border-white/10 shadow-sm"
-                        : "text-[#8890a6] hover:text-white hover:bg-white/5"
-                    }`}
+                    className={`px-3 py-1 text-xs font-mono rounded-md transition-all cursor-pointer ${activeTab === "output"
+                      ? "bg-[#23283b] text-white font-medium border border-white/10 shadow-sm"
+                      : "text-[#8890a6] hover:text-white hover:bg-white/5"
+                      }`}
                   >
                     Output
                     {runSuccess && <span className="ml-1.5 w-1.5 h-1.5 rounded-full bg-[#00f541] inline-block"></span>}
@@ -326,7 +327,7 @@ export default function CodeConnect({
 
           {/* RIGHT: "Let's build something disciplined" Connect Card */}
           <div className="relative rounded-2xl md:rounded-3xl bg-gradient-to-br from-[#1c1833] via-[#10111a] to-[#0d0e14] border border-[#2e2b48]/70 shadow-[0_12px_45px_rgba(0,0,0,0.7)] p-8 md:p-12 flex flex-col justify-between overflow-hidden backdrop-blur-xl group">
-            
+
             {/* Top-left subtle purple glow ambient background */}
             <div className="pointer-events-none absolute -top-16 -left-16 w-64 h-64 bg-violet-600/25 rounded-full blur-[70px]"></div>
 
@@ -342,10 +343,10 @@ export default function CodeConnect({
 
             {/* Buttons & Email Action */}
             <div className="relative z-10 my-8 space-y-3.5">
-              
+
               {/* Primary LinkedIn Button */}
               <a
-                href={linkedInUrl}
+                href={cleanLinkedInUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 id="btn-linkedin"
@@ -357,7 +358,7 @@ export default function CodeConnect({
 
               {/* Secondary GitHub Button */}
               <a
-                href={githubUrl}
+                href={cleanGithubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 id="btn-github"
@@ -370,11 +371,11 @@ export default function CodeConnect({
               <div className="text-center pt-2">
                 <span className="text-zinc-400 text-xs md:text-sm">Or email </span>
                 <a
-                  href={`mailto:${email}`}
+                  href={`mailto:${cleanEmail}`}
                   id="link-email"
                   className="text-[#00f541] hover:underline font-mono text-xs md:text-sm transition-colors"
                 >
-                  {email}
+                  {cleanEmail}
                 </a>
               </div>
             </div>
