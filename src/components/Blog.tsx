@@ -18,7 +18,7 @@ const blogPosts = [
     title: "Designing Zero-Collision Room Reservation Engines in MongoDB",
     date: "Oct 28, 2026",
     excerpt:
-      "How we engineered the single-folio billing and collision-free room booking logic in HotelOS using MongoDB ACID multi-document transactions and atomic date-overlap validation.",
+      "How we engineered the single-folio billing and collision-free room booking logic in Explore Pakistan Hotel SaaS using MongoDB ACID multi-document transactions and atomic date-overlap validation.",
     category: "Backend & DB",
     readTime: "8 min read",
     url: "https://github.com/faizurrehman39804",

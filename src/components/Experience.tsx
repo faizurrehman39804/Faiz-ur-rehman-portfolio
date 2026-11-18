@@ -10,7 +10,7 @@ const experiences = [
     description:
       "Architecting and shipping production-grade full-stack web applications using Next.js 15, React 19, Node.js, Express, and MongoDB. Integrating AI-assisted developer workflows (Claude, Antigravity), building zero-collision booking systems, and optimizing web vitals for high-converting client platforms.",
     achievements: [
-      "Engineered single-folio billing and conflict-free booking engines in HotelOS",
+      "Engineered single-folio billing and conflict-free booking engines in Explore Pakistan Hotel SaaS",
       "Delivered real-time polling application with sub-40ms WebSocket updates",
       "Executed discovery sessions, proposal scoping, and direct client delivery"
     ],
@@ -24,7 +24,7 @@ const experiences = [
     description:
       "Collaborated on comprehensive full-stack team projects from complex Figma designs. Built authenticated RESTful APIs, designed normalized relational and NoSQL schemas, and engineered stateful frontend dashboards.",
     achievements: [
-      "Co-authored hotel management property system from system-level Figma blueprints",
+      "Co-authored Explore Pakistan hotel management SaaS from system-level Figma blueprints",
       "Implemented secure JWT role-based access control (RBAC) and data audit trails",
       "Managed CI/CD deployment pipelines to Vercel and render environments"
     ],

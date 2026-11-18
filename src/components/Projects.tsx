@@ -23,19 +23,19 @@ export interface Project {
 const projectsData: Project[] = [
   {
     id: "hotel-management",
-    title: "Hotel Management System (HotelOS)",
-    subtitle: "Enterprise Hospitality Operations & Property ERP",
+    title: "Explore Pakistan — Hotel Management SaaS Platform",
+    subtitle: "Enterprise Hospitality Cloud & Multi-Hotel Super Admin Portal",
     category: "Full-Stack",
-    techStack: ["React.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "MUI"],
+    techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "MUI", "RBAC"],
     description:
-      "End-to-end hotel operations and property management system designed from comprehensive Figma system architecture. Features unified guest journey tracking from reservation to check-out, single-folio billing, collision-free room reservation guardrails, real-time housekeeping lifecycle, and operational reports.",
-    highlights: ["Single-Folio Billing", "Collision-Free Engine", "Housekeeping Dispatch"],
-    metrics: "100% Collision-Free Room Booking Logic",
-    status: "Featured Case Study",
+      "Enterprise-grade multi-tenant hotel management SaaS platform built for hospitality operations, nationwide resort governance, and secure administration. Features a centralized Super Admin Portal, tiered Role-Based Access Control (RBAC), automated hotel registration approvals, collision-free reservation guardrails, single-folio billing, and live financial telemetry with MRR tracking.",
+    highlights: ["Super Admin & Multi-Hotel Governance", "Tiered RBAC & Active Audit Telemetry", "Single-Folio Billing & Reservation Guardrails"],
+    metrics: "Multi-Tenant SaaS • TLS 1.3 / 256-Bit Encrypted",
+    status: "Production Platform",
     githubUrl: "https://github.com/SMIT-Bootcamp/HotelManagement.git",
     liveUrl: "",
-    image: "",
-    accentColor: "#00f541",
+    image: "/hotel-management.png",
+    accentColor: "#38bdf8",
   },
   {
     id: "pollify",
